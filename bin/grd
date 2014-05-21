@@ -14,5 +14,8 @@ begin
   }["location"]
 rescue Exception => e
   puts "Get ReDirect: Get the URL redirection."
-  puts "Usage: grd www.example.com"
+  puts "by Daniel P. Clark / License: The MIT License"
+  puts
+  puts "  Usage: grd www.example.com"
+  puts
 end
