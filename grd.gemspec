@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://www.github.com/danielpclark/grd'
   s.platform    = 'ruby'
   s.bindir      = 'bin'
-  s.executables = 'grd'
+  s.executables << 'grd'
   s.require_paths = ['lib']
 end

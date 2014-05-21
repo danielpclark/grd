@@ -12,3 +12,13 @@ module GRD
 		}["location"]
 	end
 end
+
+begin
+  GRD::getredirect(ARGV[0])
+rescue Exception => e
+  puts "Get ReDirect: Get the URL redirection."
+  puts "by Daniel P. Clark / License: The MIT License"
+  puts
+  puts "  Usage: grd www.example.com"
+  puts
+end

@@ -1,14 +1,4 @@
 #!/usr/bin/ruby
 #$: << File.join(File.dirname(__FILE__), '../lib')
-require 'grd'
 # GRD (Get ReDirect)
-
-begin
-  GRD::getredirect(ARGV[0])
-rescue Exception => e
-  puts "Get ReDirect: Get the URL redirection."
-  puts "by Daniel P. Clark / License: The MIT License"
-  puts
-  puts "  Usage: grd www.example.com"
-  puts
-end
+require 'grd'
