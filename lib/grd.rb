@@ -7,7 +7,7 @@ module GRD
 		val.prepend('http://') unless !!val['http://']
 		uri = URI.parse val
 		req = Net::HTTP::Get.new(uri.request_uri)
-		puts Net::HTTP.new(uri.host).start { |server|
+		Net::HTTP.new(uri.host).start { |server|
 			server.request(req)
 		}["location"]
 	end
